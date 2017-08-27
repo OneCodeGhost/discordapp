@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left-main">
+            <div class="main-left-text">
+                <p class="left-title">Hello,World</p>
+                <ul>
+                    <li>100%Free</li>
+                    <li>Secure</li>
+                    <li>Beautiful</li>
+                </ul>
+                <a href="javascript:;" class="line">Learn More</a>
+            </div>
+        </div>
+
+            <div class="customer">
+                <div class="left-customer">
+                    <div class="inc-logo">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="right-customer">
+                    <p class="mar right-text">YOU'VE BEEN INVITED TO JOIN</p>
+                    <div class="customer-icon mar">
+                        <i></i>
+                        <span class="right-text">Marvelous</span>
+                    </div>
+                    <div class="login-box ">
+                        <h5 class="mar">WHAT SHOULD EVERYONE CALL YOU?</h5>
+                        <input type="text" class="login-input right-text">
+                        <a href="javascript:;" class="nodecoration">Continue</a>
+                    </div>
+                    <div class="login-hint ">
+                        <div class="mar">By registering,you agree to discored's 
+                            <a class="hint-text nodecoration" href="javascript:;">
+                            Terms of Service<span></span></a>
+                            and 
+                            <div><a class="hint-text nodecoration" href="javascript:;">
+                                    Privacy Policy<span></span></a></div>
+                        </div>
+                        <hr>
+                        <div class="mar">Already have an account? 
+                            <a class="hint-text nodecoration" href="javascript:;">
+                                Login<span></span></a></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $('.login-hint a').hover(function(){
+            $('span',this).stop().css('height','2px');
+            $('span',this).stop().animate({
+                left:'0',
+                width:'100%',
+            },200);
+        },function(){
+            $('span',this).stop().animate({
+                width:'0'
+            },200);
+        });
+
+        $('.nodecoration').hover(function(){
+            
+        });
+    </script>
+</body>
+</html>
